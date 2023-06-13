@@ -5,13 +5,18 @@
 ## 怎么用
 
 ```shell
-yarn install:unicom # 安装主应用(联通)
+yarn install:unicom     # 安装主应用(联通)
 yarn install:inspection # 安装子应用(纪检)
-yarn install:executing # 安装子应用(执纪)
+yarn install:executing  # 安装子应用(执纪)
 
-yarn start:unicom   # 开启主应用(联通)
+yarn start:unicom       # 开启主应用(联通)
 yarn start:inspection   # 开启子应用(纪检)
-yarn start:executing   # 开启子应用(执纪)
+yarn start:executing    # 开启子应用(执纪)
+
+yarn build:unicom       # 打包主应用(联通)
+yarn build:inspection   # 打包子应用(纪检)
+yarn build:executing    # 打包子应用(执纪)
+yarn build:all          # 打包全部应用(全部)
 ```
 
 ## 主应用访问
