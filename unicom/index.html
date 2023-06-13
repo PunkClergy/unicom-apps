@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>中国联通</title>
+</head>
+
+<body>
+  <div class="mainapp">
+    <!-- header区域 -->
+    <header class="mainapp-header">
+      <h1>中国联通</h1>
+    </header>
+    <div class="mainapp-main">
+      <!-- 侧边栏 -->
+      <ul class="mainapp-sidemenu">
+        <li onclick="push('/inspection')">纪检</li>
+        <li onclick="push('/executing')">执纪</li>
+      </ul>
+      <!-- 子应用  -->
+      <main id="subapp-container"></main>
+    </div>
+  </div>
+
+  <script>
+    // 跳转函数
+    const push = subapp => {
+      history.pushState(null, subapp, subapp) //状态 标题 URL
+    }
+  </script>
+</body>
+
+</html>
